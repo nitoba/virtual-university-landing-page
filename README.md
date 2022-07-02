@@ -54,7 +54,7 @@ You can view the layout through the link below:
 
 You can view the project through the link below:
 
-- [Live Preview](https://the-movie-app.vercel.app/)
+- [Live Preview](https://virtual-university-landing-page.vercel.app/)
 
 ## 📝 License
 
