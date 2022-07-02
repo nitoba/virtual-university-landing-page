@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=7b6ef6&labelColor=120f31" alt="License">
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=fd4455&labelColor=335dff" alt="License">
   
-  <img src="https://img.shields.io/github/forks/NitoBa/the-movie-app?label=forks&message=MIT&color=7b6ef6&labelColor=120f31" alt="Forks">
+  <img src="https://img.shields.io/github/forks/NitoBa/the-movie-app?label=forks&message=MIT&color=fd4455&labelColor=335dff" alt="Forks">
 
-  <img src="https://img.shields.io/github/stars/NitoBa/the-movie-app?label=stars&message=MIT&color=7b6ef6&labelColor=120f31" alt="Stars">
+  <img src="https://img.shields.io/github/stars/NitoBa/the-movie-app?label=stars&message=MIT&color=fd4455&labelColor=335dff" alt="Stars">
 </p>
 
 <h1 align="center">
