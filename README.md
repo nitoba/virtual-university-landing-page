@@ -41,6 +41,12 @@ npm install
 npm run dev
 ```
 
+Run this command to view components through the storybook:
+
+```bash
+npm run storybook
+```
+
 ## 🔖 Layout
 
 You can view the layout through the link below:
