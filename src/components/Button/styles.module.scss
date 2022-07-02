@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 5.2rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  padding: 0 4rem;
+  border-radius: 0.8rem;
+  transition: filter 0.2s;
+  width: fit-content;
+
+  &.red {
+    background-color: var(--red500);
+    box-shadow: var(--shadow-red);
+  }
+
+  &.blue {
+    background-color: var(--blue500);
+    box-shadow: var(--shadow-blue);
+  }
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
