@@ -24,6 +24,10 @@ export function Header() {
             src={close}
             alt="close icon"
           />
+          <div className={styles.actionButtons}>
+            <button className={styles.login}>Login</button>
+            <Button variant="red" title="Register" />
+          </div>
           <nav className={styles.navContainer}>
             <ul className={styles.listOfItems}>
               <li className={styles.item}>

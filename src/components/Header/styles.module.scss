@@ -50,22 +50,6 @@
     }
   }
 
-  .actionButtons {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    .login {
-      font-weight: 500;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: var(--black500);
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
   @media screen and (min-width: 768px) {
     .menuIcon {
       display: none;
@@ -103,6 +87,28 @@
   }
 }
 
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  .login {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--black500);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 4rem;
+    gap: 2rem;
+  }
+}
+
 .menuMobile {
   display: flex;
   align-items: center;
@@ -129,6 +135,7 @@
     margin-bottom: 3.2rem;
     width: 6rem;
     height: 6rem;
+    cursor: pointer;
   }
 
   .navContainer {
