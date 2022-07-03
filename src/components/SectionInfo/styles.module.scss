@@ -3,6 +3,17 @@
   align-items: center;
   gap: 14.6rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+
+    button {
+      align-self: center;
+    }
+  }
+
   .image {
     width: 51.2rem;
     height: 51.2rem;

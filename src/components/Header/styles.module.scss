@@ -20,6 +20,10 @@
   max-width: 128rem;
   margin: 0 auto;
 
+  @media screen and (max-width: 768px) {
+    max-width: initial;
+  }
+
   .logo {
     width: 20.3rem;
     height: 4rem;
