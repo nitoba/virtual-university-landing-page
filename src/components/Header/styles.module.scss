@@ -7,19 +7,28 @@
   z-index: 100;
   width: 100%;
   box-shadow: var(--shadow);
+
+  @media screen and (max-width: 768px) {
+    padding: 2.4rem;
+  }
 }
 
 .content {
   display: flex;
   align-items: center;
   gap: 17.7rem;
-
   max-width: 128rem;
   margin: 0 auto;
 
   .logo {
     width: 20.3rem;
     height: 4rem;
+  }
+
+  .menuIcon {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
   }
 
   .navContainer {
@@ -37,8 +46,6 @@
         &:hover {
           color: var(--black500);
         }
-        a {
-        }
       }
     }
   }
@@ -55,6 +62,91 @@
 
       &:hover {
         opacity: 0.8;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .menuIcon {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: initial;
+    justify-content: space-between;
+    .navContainer {
+      display: none;
+    }
+
+    .actionButtons {
+      display: none;
+    }
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.menuMobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  padding: 3.2rem;
+  animation-name: openMenu;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+
+  &.closeMenu {
+    animation-name: closeMenu;
+  }
+
+  .closeIcon {
+    align-self: flex-end;
+    margin-bottom: 3.2rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .navContainer {
+    .listOfItems {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      align-items: center;
+      .item {
+        transition: color 0.3s;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 2.2rem;
+        color: var(--gray300);
+
+        &:hover {
+          color: var(--black500);
+        }
       }
     }
   }
